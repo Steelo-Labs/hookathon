@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0",
+  "libraries": [
+    "LibDiamond",
+    "LibAppStorage",
+    "LibAccessControl",
+    "LibSteelo",
+    "LibSteez",
+    "LibBazaarRouter",
+    "LibBazaarHooks",
+    "LibVillageHubs",
+    "LibVillageSIP"
+  ],
+  "facets": [
+    {
+      "name": "DiamondCutFacet",
+      "dependencies": ["LibDiamond"]
+    },
+    {
+      "name": "DiamondLoupeFacet",
+      "dependencies": ["LibDiamond"]
+    },
+    {
+      "name": "OwnershipFacet",
+      "dependencies": ["LibDiamond"]
+    },
+    {
+      "name": "AccessControlFacet",
+      "dependencies": ["LibAppStorage", "LibAccessControl"]
+    },
+    {
+      "name": "BazaarHookFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo", "LibSteez", "LibBazaarRouter", "LibBazaarHooks"]
+    },
+    {
+      "name": "BazaarRouterFacet",
+      "dependencies": ["LibAppStorage", "LibBazaarRouter", "LibSteez"]
+    },
+    {
+      "name": "CollectibleContentFacet",
+      "dependencies": ["LibAppStorage", "LibSteez"]
+    },
+    {
+      "name": "ProfileFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEELOAdminFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEELOAttributesFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEELOFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEELOStakingFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEELOTransactionFacet",
+      "dependencies": ["LibAppStorage", "LibSteelo"]
+    },
+    {
+      "name": "STEEZDataBaseFacet",
+      "dependencies": ["LibAppStorage", "LibSteez"]
+    },
+    {
+      "name": "STEEZFacet",
+      "dependencies": ["LibAppStorage", "LibSteez"]
+    },
+    {
+      "name": "VillageHubsFacet",
+      "dependencies": ["LibAppStorage", "LibVillage"]
+    },
+    {
+      "name": "VillageSIPFacet",
+      "dependencies": ["LibAppStorage", "LibSIP"]
+    }
+  ],
+  "deploymentOrder": [
+    "DiamondCutFacet",
+    "DiamondLoupeFacet",
+    "OwnershipFacet",
+    "AccessControlFacet",
+    "STEELOFacet",
+    "STEELOAdminFacet",
+    "STEELOAttributesFacet",
+    "STEELOStakingFacet",
+    "STEELOTransactionFacet",
+    "STEEZFacet",
+    "STEEZDataBaseFacet",
+    "CollectibleContentFacet",
+    "BazaarHookFacet",
+    "BazaarRouterFacet",
+    "VillageHubsFacet",
+    "VillageSIPFacet",
+    "ProfileFacet"
+  ]
+}
